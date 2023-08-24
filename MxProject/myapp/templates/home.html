@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home Page</title>
+  <style>
+    /* Reset some default styling */
+body, ul {
+  margin: 0;
+  padding: 0;
+ 
+}
+body{
+  background-color: blueviolet;
+}
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: lightgray;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="">Home</a></li>
+      <li><a href="{% url 'Register' %}">SignUp</a></li>
+      <li><a href="{% url 'Login' %}">SignIn</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
